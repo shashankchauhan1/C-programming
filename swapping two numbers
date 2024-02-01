@@ -1,0 +1,43 @@
+# swapping-two-numbers-in-C programming.
+
+1> # using + (addition) , - (subtraction) operator.
+// swap of two numbers in C without using third variable.
+
+#include<stdio.h>
+int main() {
+    int a=4;
+    int b=2;
+    printf("before swapping a= %d and b= %d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("after swapping a= %d and b= %d\n",a,b);
+}
+
+2> #using * (multiply) , / (divide) operator.
+// swap of two numbers in C without using third variable.
+
+#include<stdio.h>
+int main() {
+    int a=4;
+    int b=2;
+    printf("before swapping a= %d and b= %d\n",a,b);
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    printf("after swapping a= %d and b= %d\n",a,b);
+}
+
+3> // swap of two numbers in C using third variable.
+
+#include<stdio.h>
+int main() {
+    int a=4;
+    int b=2;
+    int c;
+    printf("before swapping a= %d and b= %d\n",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("after swapping a= %d and b= %d\n",a,b);
+}
