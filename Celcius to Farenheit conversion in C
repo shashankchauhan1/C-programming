@@ -1,0 +1,10 @@
+# celcius-to-farenheit-conversion-in-C
+
+#include<stdio.h>
+int main() {
+    float c;
+    printf("enter degree in celcius: ");
+    scanf("%f",&c);
+    printf("%f",(1.8*c)+32);
+    return 0;
+}
