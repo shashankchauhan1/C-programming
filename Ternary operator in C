@@ -1,0 +1,13 @@
+# Ternary-operator-in-C
+check whether the number is odd or even using ternary operator.
+
+
+#include<stdio.h>
+int main() {
+    int n;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    //ternary operator  :  condition ? true : false
+    printf((n%2==0) ? "even" : "odd");
+    return 0;
+}
