@@ -1,0 +1,23 @@
+// find the greatest among three numbers enter by user.
+using if-else statement.
+
+#include<stdio.h>
+int main() {
+    int a,b,c;
+    printf("enter a: ");
+    scanf("%d",&a);
+    printf("enter b: ");
+    scanf("%d",&b);
+    printf("enter c: ");
+    scanf("%d",&c);
+    if(a>b && a>c){
+        printf("greatest numebr is a: %d",a);
+    }
+    else if(b>a && b>c){
+        printf("greatest number is b: %d",b);
+    }
+    else if(c>a && c>b){
+        printf("greatest number is c: %d",c);
+    }
+    return 0;
+}
