@@ -1,0 +1,23 @@
+// check weather the given number is odd or even usinf function.
+
+#include<stdio.h>
+
+int even(int n);
+
+int main() {
+    int n;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    even(n);
+    return 0;
+}
+
+int even(int n){
+    if(n%2==0){
+        printf("even");
+    }
+    else{
+        printf("odd");
+    }
+    return 0;
+}
