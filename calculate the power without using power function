@@ -1,0 +1,26 @@
+// calculate the power of a integer without using power function.
+
+#include<stdio.h>
+
+int pwr(int base, int expo);
+
+int main() {
+    int base;
+    int expo;
+    printf("enter base: ");
+    scanf("%d",&base);
+    printf("enter power: ");
+    scanf("%d",&expo);
+    int result=pwr(base,expo);
+    printf("%d",result);
+    return 0;
+}
+
+int pwr(int base, int expo){
+    int sum=1;
+    while(expo>=1){
+        sum=sum*base;
+        expo--;
+    }
+    return sum;
+}
