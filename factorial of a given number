@@ -1,4 +1,4 @@
-// factorial code:
+// factorial ocode:
 #include<stdio.h>
 
 int fac(int n);
