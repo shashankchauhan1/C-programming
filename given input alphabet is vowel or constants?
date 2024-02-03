@@ -1,5 +1,7 @@
 // check weather the given input alphabet is vowel or constants?
 
+1> using if-else statement.
+
 #include<stdio.h>
 int main() {
     char ch;
@@ -10,6 +12,30 @@ int main() {
     }
     else{
         printf("given input is a constant");
+    }
+    return 0;
+}
+
+2> using switch case statement
+
+2> switch case statement
+
+#include<stdio.h>
+int main() {
+    char ch;
+    printf("enter a alphabet: ");
+    scanf("%c",&ch);
+    switch(ch){
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            printf("this is a vowel");
+        break;
+        default:
+            printf("this is not a vowel");
+        break;
     }
     return 0;
 }
