@@ -14,6 +14,7 @@ int main() {
     printf("after swapping a= %d and b= %d\n",a,b);
 }
 
+
 2> #using * (multiply) , / (divide) operator.
 // swap of two numbers in C without using third variable.
 
@@ -27,6 +28,7 @@ int main() {
     a=a/b;
     printf("after swapping a= %d and b= %d\n",a,b);
 }
+
 
 3> // swap of two numbers in C using third variable.
 
@@ -42,6 +44,7 @@ int main() {
     printf("after swapping a= %d and b= %d\n",a,b);
 }
 
+
 4> // swap of two variable using XOR(bitwise) operator
 
 #include<stdio.h>
@@ -54,4 +57,56 @@ int main() {
     a^b;
     b^c;
     printf("after swapping a= %d and b= %d\n",a,b);
+}
+
+
+5> // by call by value in pointers in function call.
+
+#include<stdio.h>
+
+int swap(int a, int b);
+
+int main() {
+    int a,b;
+    printf("enter a: ");
+    scanf("%d",&a);
+    printf("enter b: ");
+    scanf("%d",&b);
+    swap(a,b);
+    return 0;
+}
+
+int swap(int a, int b){
+    int temp=0;
+    temp=a;
+    a=b;
+    b=temp;
+    printf("a:%d b:%d",a,b);
+    return 0;
+}
+
+
+6> // by call by reference in pointers in function call.
+
+#include<stdio.h>
+
+int swap(int *a, int *b);
+
+int main() {
+    int a,b;
+    printf("enter a: ");
+    scanf("%d",&a);
+    printf("enter b: ");
+    scanf("%d",&b);
+    swap(&a,&b);
+    return 0;
+}
+
+int swap(int *a, int *b){
+    int temp=0;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+    printf("a:%d b:%d",*a,*b);
+    return 0;
 }
