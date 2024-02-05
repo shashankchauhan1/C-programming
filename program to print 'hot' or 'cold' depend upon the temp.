@@ -1,0 +1,26 @@
+ // write a program to print 'hot' or 'cold' depend upon the temp. given by user?
+
+#include<stdio.h>
+int hot(int n);
+int cold(int n);
+
+int main() {
+    int n;
+    printf("enter temperature in celcius: ");
+    scanf("%d",&n);
+    if(n>=25){
+        hot(n);
+    }
+    else if(n<25){
+        cold(n);
+    }
+    return 0;
+}
+
+int hot(int n){
+    printf("HOT");
+}
+
+int cold(int n){
+    printf("COLD");
+}
