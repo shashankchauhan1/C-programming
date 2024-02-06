@@ -1,0 +1,30 @@
+Q calcute the percentage of marks scored by a student in (math,science,computer).
+
+#include<stdio.h>
+
+float convert(float s,float m,float c);
+
+int main() {
+    float n;
+    float m;
+    float c;
+    
+    printf("enter your science marks: ");
+    scanf("%f",&n);
+    
+    printf("enter your math marks: ");
+    scanf("%f",&m);
+    
+    printf("enter your computer marks: ");
+    scanf("%f",&c);
+    
+    float result = convert(n,m,c);
+    printf("%f\n",result);
+    
+    return 0;
+}
+
+float convert(float n,float m,float c){
+    float avg=(n+m+c)/3;
+    return avg;
+}
