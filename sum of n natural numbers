@@ -1,4 +1,4 @@
-// sum of n natural number 
+// calculate the sum of n natural number.
 
 #include<stdio.h>
 
@@ -14,13 +14,12 @@ int main() {
 }
 
 int sum(int n){
-    if(n==1 || n==0){
-        return 1;
+    if(n==0){
+        return 0;
     }
     else{
-        int total=sum(n-1);
-        int sumn=n+total;
-        return sumn;
+        int total=n+sum(n-1);
+        return total;
     }
     return 0;
 }
