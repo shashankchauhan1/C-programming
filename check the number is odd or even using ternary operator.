@@ -1,5 +1,5 @@
-# Ternary-operator-in-C
-check whether the number is odd or even using ternary operator.
+// Ternary-operator-in-C
+// check whether the number is odd or even using ternary operator.
 
 
 #include<stdio.h>
