@@ -7,7 +7,7 @@ int main() {
     int n;
     printf("enter a number: ");
     scanf("%d",&n);
-    //ternary operator  :  condition ? true : false
+    //ternary operator  :  condition ? true : false;
     printf((n%2==0) ? "even" : "odd");
     return 0;
 }
