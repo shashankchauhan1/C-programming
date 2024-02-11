@@ -1,5 +1,5 @@
 // find the greatest among three numbers enter by user.
-using if-else statement.
+// using if-else statement.
 
 #include<stdio.h>
 int main() {
@@ -19,5 +19,21 @@ int main() {
     else if(c>a && c>b){
         printf("greatest number is c: %d",c);
     }
+    return 0;
+}
+
+//using ternary operator.
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter a: ");
+    scanf("%d",&a);
+    printf("enter b: ");
+    scanf("%d",&b);
+    printf("enter c: ");
+    scanf("%d",&c);
+    int final= (a>b) ? ((a>c) ? a : c) : ((b>c) ? b : c);
+    printf("greater is %d",final);
     return 0;
 }
