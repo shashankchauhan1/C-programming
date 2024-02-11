@@ -1,7 +1,7 @@
-Q. write a program to give grade to students:
-1> more than equal to 90    ------->    O
-2> more than equal to 80 but less than 90   ------------>        A+
-3> less than 80  --------------->   A
+// Q. write a program to give grade to students:
+// 1> more than equal to 90    ------->    O
+// 2> more than equal to 80 but less than 90   ------------>        A+
+// 3> less than 80  --------------->   A
 
 #include<stdio.h>
 int main() {
