@@ -1,5 +1,5 @@
 // find the greatest among three numbers enter by user.
-// using if-else statement.
+// 1>  using if-else statement.
 
 #include<stdio.h>
 int main() {
@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-//using ternary operator.
+// 2>  using ternary operator.
 
 #include<stdio.h>
 int main(){
