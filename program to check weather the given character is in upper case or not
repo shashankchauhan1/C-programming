@@ -1,0 +1,16 @@
+// program to check weather the given character is in upper case or not
+
+#include<stdio.h>
+#include<ctype.h>
+int main() {
+    char ch;
+    printf("enter a character: ");
+    scanf("%c",&ch);
+    if(isupper(ch)){
+        printf("entered character is in uppercase");
+    }
+    else{
+        printf("entered character is not in uppercase");
+    }
+    return 0;
+}
