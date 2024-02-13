@@ -1,0 +1,16 @@
+// program to check weather the given character is in lower case or not
+
+#include<stdio.h>
+#include<ctype.h>
+int main() {
+    char ch;
+    printf("enter a character: ");
+    scanf("%c",&ch);
+    if(islower(ch)){
+        printf("entered character is in lowercase");
+    }
+    else{
+        printf("entered character is not in lowercase");
+    }
+    return 0;
+}
