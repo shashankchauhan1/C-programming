@@ -1,0 +1,37 @@
+// write a program to count the digits, uppercase, lowercase and other characters in a string.
+
+
+#include<stdio.h>
+#include<ctype.h>
+
+void check(char str[100]);
+
+int main(){
+    char str[100];
+    printf("enter a string: ");
+    scanf("%s",str);
+    check(str);
+    return 0;
+}
+
+void check(char str[100]){
+    int digit=0, uppercase=0, lowercase=0, others=0;
+    for(int i=1; str[i]='\0'; ++i){
+        if(isdigit(str[i])){
+            digit++;
+        }
+        else if(isupper(str[i])){
+            uppercase++;
+        }
+        else if(islower(str[i])){
+            lowercase++;
+        }
+        else{
+            others++;
+        }
+    }
+    printf("digits: %d\n",digit);
+    printf("lowercase: %d\n",lowercase);
+    printf("uppercase: %d\n",uppercase);
+    printf("others: %d\n",others);
+}
