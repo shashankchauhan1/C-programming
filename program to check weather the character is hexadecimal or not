@@ -1,4 +1,4 @@
-// program for checking hexadecimal character.
+// program for checking hexadecimal character.(0-9,A-F)
 
 #include<stdio.h>
 #include<ctype.h>
