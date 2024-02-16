@@ -1,4 +1,4 @@
-// fibonaaci series upto number n.
+// program to print fibonaaci series upto number n.
 #include<stdio.h>
 
 int fibo(int n);
