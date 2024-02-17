@@ -1,5 +1,6 @@
 // calculate the factorial of given number:
 
+
 #include<stdio.h>
 
 int fac(int n);
