@@ -1,5 +1,8 @@
 // 1>  star square pattern.
-
+                                                    ****
+                                                    ****
+                                                    ****
+                                                    ****
 #include<stdio.h>
 int main() {
     int n;
@@ -15,4 +18,28 @@ int main() {
         printf("\n");
         i++;
     }
+}
+
+
+// 2> to print the pattern of the value of i.
+                                                                0000
+                                                                1111
+                                                                2222
+                                                                3333
+#include<stdio.h>
+int main() {
+    int n;
+    printf("enter number: ");
+    scanf("%d",&n);
+    int i=0;
+    while(i<n){
+        int j=0;
+        while(j<n){
+            printf("%d",i);
+            j++;
+        }
+        printf("\n");
+        i++;
+    }
+    return 0;
 }
