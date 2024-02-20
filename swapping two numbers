@@ -60,7 +60,7 @@ int main() {
 }
 
 
-5> // by call by reference in pointers in function call.
+5> // by call by reference in pointers in function call. (swapping is not done by call by value).
 
 #include<stdio.h>
 
