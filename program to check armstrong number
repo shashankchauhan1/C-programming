@@ -1,9 +1,9 @@
 // write a program to check weather the given input is a armstrong number or not.
 
+// 1> without function
+
 #include<stdio.h>
 #include<math.h>
-
-// 1> without function
 
 int main(){
     int n;
@@ -29,3 +29,38 @@ int main(){
     }
 }
 
+// 2>  using function
+
+#include<stdio.h>
+#include<math.h>
+
+int arm(int n);
+
+int main() {
+    int n;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    arm(n);
+    return 0;
+}
+
+int arm(int n){
+    int temp=n;
+    int n2=n;
+    int pwr=0,sum=0;
+    while(temp!=0){
+        temp=temp/10;
+        pwr++;
+    }
+    while(n>0){
+        int rem=n%10;
+        sum=sum+pow(rem,pwr);
+        n=n/10;
+    }
+    if(sum==n2){
+        printf("it is a armstrong number");
+    }
+    else{
+        printf("it is not a armstrong number");
+    }
+}
