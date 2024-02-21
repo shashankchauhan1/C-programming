@@ -1,0 +1,31 @@
+// write a program to check weather the given input is a armstrong number or not.
+
+#include<stdio.h>
+#include<math.h>
+
+// 1> without function
+
+int main(){
+    int n;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    int sum=0,pwr=0;
+    int temp=n;
+    int n2=n;
+    while(temp!=0){
+        temp=temp/10;
+        pwr++;
+    }
+    while(n>0){
+        int rem=n%10;
+        sum=sum+pow(rem,pwr);
+        n=n/10;
+    }
+    if(sum==n2){
+        printf("it is a armstrong number");
+    }
+    else{
+        printf("it is not a armstrong number");
+    }
+}
+
