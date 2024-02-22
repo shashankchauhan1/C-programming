@@ -9,3 +9,16 @@ int main() {
     printf("this is the area of the circle: %f",3.14*r*r);
     return 0;
 }
+
+
+// program to calculate the circumference of circle
+
+#include<stdio.h>
+int main() {
+    float r;
+    printf("enter the radius of the circle: ");
+    scanf("%f",&r);
+    
+    printf("this is the circumference of the circle: %.2f",2*3.14*r);
+    return 0;
+}
