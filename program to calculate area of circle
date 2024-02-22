@@ -1,4 +1,4 @@
-// code for calculating area of circle.
+// program to calculate the area of circle.
 
 #include<stdio.h>
 int main() {
