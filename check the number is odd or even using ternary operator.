@@ -11,3 +11,17 @@ int main() {
     printf((n%2==0) ? "even" : "odd");
     return 0;
 }
+
+
+// write an program to check stdent is paas or fail (more than 30 pass)  (less than equal to 30 fail) usinf ternary operator.
+
+#include<stdio.h>
+int main() {
+    int no;
+    printf("enter your marks: ");
+    scanf("%d",&no);
+    
+    no>30 ? printf("pass") : printf("fail");
+    
+    return 0;
+}
