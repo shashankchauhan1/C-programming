@@ -1,4 +1,4 @@
-
+1> using bitwise operators(not(!) , xor(^)).
 
 #include<stdio.h>
 int main() {
