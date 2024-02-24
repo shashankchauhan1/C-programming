@@ -15,6 +15,7 @@ int main() {
     }
 }
 
+
 2> using relational operator(==).
 
 #include<stdio.h>
@@ -30,4 +31,25 @@ int main() {
     else{
         printf("they are not equal");
     }
+}
+
+
+3> using pointers.
+
+#include<stdio.h>
+int main() {
+    int n1=4;
+    int n2=4;
+    
+    int *ptr_n1=&n1;
+    int *ptr_n2=&n2;
+    
+    if(*ptr_n1==*ptr_n2){
+        printf("they are equal.");
+    }
+    else{
+        printf("they are not equal.");
+    }
+
+    return 0;
 }
