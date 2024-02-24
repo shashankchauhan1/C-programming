@@ -1,4 +1,4 @@
-1> using bitwise operators(not(!) , xor(^)).
+// 1> using bitwise operators(not(!) , xor(^)).
 
 #include<stdio.h>
 int main() {
@@ -16,7 +16,7 @@ int main() {
 }
 
 
-2> using relational operator(==).
+// 2> using relational operator(==).
 
 #include<stdio.h>
 int main() {
@@ -34,7 +34,7 @@ int main() {
 }
 
 
-3> using pointers.
+// 3> using pointers.
 
 #include<stdio.h>
 int main() {
