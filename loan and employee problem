@@ -2,3 +2,49 @@ Q An employee can apply for a loan at the beginning of every six months, but he 
 RULE 1 : Am employee cannot enjoy more than 2 loans at any point of the time.
 RULE 2: Maximum permissible total loan is limited and depends upon the category of the employee.
 
+solution:
+
+
+#include<stdio.h>
+int main() {
+    char category;
+    printf("enter your category(a,b,c): ");
+    scanf("%c",&category);
+    
+    int total_loan,loan_amt,max_loan,check,loan_count=0;
+    
+    switch(category){
+        case 'a':
+            max_loan=100000;
+            break;
+        case 'b':
+            max_loan=50000;
+            break;
+        case 'c':
+            max_loan=25000;
+            break;
+    }
+    do{
+    if(loan_count>=2){
+        printf("the limit is only upto 2 loans.");
+        break;
+    }
+    
+    printf("enter loan amount: ");
+    scanf("%d",&loan_amt);
+    
+    if((total_loan+loan_amt)>max_loan){
+        printf("you are not eligible for this loan, limit remaining: %d",max_loan-total_loan);
+    }
+    else{
+        printf("loan sanctioned\n");
+        total_loan+=loan_amt;
+        loan_count++;
+    }
+    printf("do you want to apply for another loan 1 for yes, 0 for no: \n");
+    scanf("%d",&check);
+    }while(check==1);
+    return 0;
+}
+
+
