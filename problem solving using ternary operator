@@ -1,2 +1,14 @@
 // Q1 : take two inputs from user a,b and if a is greater than b subtract the inputs and if a is less then b return sum of inputs.
 // using conditional operator
+
+
+#include<stdio.h>
+void main() {
+    int a,b;
+    printf("enter a: ");
+    scanf("%d",&a);
+    printf("enter b: ");
+    scanf("%d",&b);
+    
+    a>b ? printf("%d",a-b) : printf("%d",a+b);
+}
