@@ -1,1 +1,2 @@
-
+// Q1 : take two inputs from user a,b and if a is greater than b subtract the inputs and if a is less then b return sum of inputs.
+// using conditional operator
