@@ -10,5 +10,5 @@ void main() {
     printf("enter b: ");
     scanf("%d",&b);
     
-    a>b ? printf("%d",a-b) : printf("%d",a+b);
+    (a>b) ? printf("%d",a-b) : printf("%d",a+b);
 }
