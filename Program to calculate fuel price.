@@ -1,1 +1,22 @@
-
+#include<stdio.h>
+int main(){
+    float fuel_price;
+    float distance;
+    float vehicle_mil;
+    printf("Enter fuel price: ");
+    scanf("%f",&fuel_price);
+    printf("Enter distance (Km): ");
+    scanf("%f",&distance);
+    printf("Enter vehicle mileage: ");
+    scanf("%f",&vehicle_mil);
+    
+    float total_price=(distance/vehicle_mil)*fuel_price;
+    
+    if(total_price <= 0){
+        printf("Total fuel cost is less than or equal to 0");
+    }
+    else{
+        printf("Total fuel cost: %f", total_price);
+    }
+    return 0;
+}
