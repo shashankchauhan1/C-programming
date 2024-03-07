@@ -1,3 +1,6 @@
+// code to calculate total fuel price
+
+
 #include<stdio.h>
 int main(){
     float fuel_price;
