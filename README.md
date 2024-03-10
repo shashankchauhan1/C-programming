@@ -1,2 +1,2 @@
 # C-programming
-c programming questions.
+c programming questions and solutions 
