@@ -1,5 +1,7 @@
 // program to print reverse of a number:
 
+1> using while loop
+
 #include<stdio.h>
 int main(){
     int n,rev,digit;
