@@ -1,3 +1,5 @@
+// EVEN
+
 #include<stdio.h>
 
 void check(int n);
@@ -19,6 +21,9 @@ void check(int n){
     }
 }
 
+
+
+// ODD
 
 #include<stdio.h>
 
