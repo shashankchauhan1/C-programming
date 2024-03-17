@@ -1,4 +1,4 @@
-// 1>  star square pattern.
+// 1>  star square pattern.          using while loop
                                                     ****
                                                     ****
                                                     ****
@@ -65,6 +65,22 @@ int main() {
         }
         printf("\n");
         i++;
+    }
+    return 0;
+}
+
+
+
+// 4> to print the pattern using for loop
+                                                          ****
+#include<stdio.h>                                         ****
+int main() {                                              ****
+    int n=4;                                              ****
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n; j++){
+            printf("* ");
+        }
+        printf("\n");
     }
     return 0;
 }
