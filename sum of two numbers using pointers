@@ -11,3 +11,18 @@ int main() {
 
 
 // simple code of pointers
+
+
+#include<stdio.h>
+int main() {
+    int a, *p, *q;
+    p=&a;
+    a=8;
+    printf("%d\n",*p);
+    *p=22;
+    *p=*p+3;
+    q=&a;
+    printf("%d\n",a);
+    printf("%d\n",*q);
+    return 0;
+}
