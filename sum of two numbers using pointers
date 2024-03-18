@@ -1,1 +1,10 @@
 // sum of 2 numbers using pointers
+
+#include<stdio.h>
+int main() {
+    int a=4,b=5,*p,*q;
+    p=&a;
+    q=&b;
+    printf("sum: %d",*p+*q);
+    return 0;
+}
