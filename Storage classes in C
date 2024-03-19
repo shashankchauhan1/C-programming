@@ -1,14 +1,14 @@
 types of storage classes in C.
 
 
-|----------------------------------------------------------------------------------------------------------|
-|               | 	STORAGE	      |	INITIAL VALUE      |	SCOPE              |	LIFE                       |
-|---------------|-----------------|--------------------|---------------------|-----------------------------|
-| 1> auto	      |	stack	          |	  garbage	         |	within block       |	end of the block           |
-|	              |		              |		                 |		                 |	                           |
-| 2> extern	    |	data segment    |  	zero	           |	global files       |	till end of program        |
-|	              |		              |		                 |		                 |                             |
-| 3> static     |	data segment    |  	zero	           |	within block       |	till end of program        |
-|	              |		              |		                 |		                 |                             |
-| 4> register   |	cpu register    |	  garbage	         |	within block       |	end of block               |
-|----------------------------------------------------------------------------------------------------------|
+
+                	STORAGE	       	INITIAL VALUE        	SCOPE                    	LIFE                       
+
+1> auto:          stack              garbage          within block          end of the block
+
+2> extern:        data segment       zero             global file           still end of program
+
+3> static:        data segment       zero             within block          till end of program       
+
+4> register:      cpu register       garbage          within block          end of block
+
