@@ -2,7 +2,7 @@ types of storage classes in C.
 
 
 
-                	STORAGE	        INITIAL VALUE      	SCOPE                	LIFE                       
+                STORAGE	        INITIAL VALUE      	SCOPE                	LIFE                       
 
 1> auto:          stack              garbage          within block          end of the block
 
