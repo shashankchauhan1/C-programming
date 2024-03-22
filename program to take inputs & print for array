@@ -54,3 +54,19 @@ void main() {
 }
 
 
+// program to take input of 5 subject(1 to 5) and give their output also.
+
+#include<stdio.h>
+int main() {
+    int marks[5],i;
+    // input
+    for(i=1; i<=5; i++){
+        printf("enter marks of sub %d: ",i);
+        scanf("%d",&marks[i]);
+    }
+    // output
+    for(i=1; i<=5; i++){
+        printf("marks in sub %d = %d\n",i,marks[i]);
+    }
+    return 0;
+}
