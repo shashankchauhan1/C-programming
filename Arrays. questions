@@ -16,3 +16,7 @@ int main() {
     printf("%d",*(arr+5));
     return 0;
 }
+
+
+Q> what is Array?
+: it is a data structure, contains the value of same datatype.
