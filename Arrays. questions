@@ -30,7 +30,6 @@ ans:  integer contain 4byte so 5*4=20,  p=1000+20 = 1020.
 
 Q program to print the table of 2 and 3 using 2d arrays.
 
-
 #include<stdio.h>
 int main() {
     int table[2][10]={{2,4,6,8,10,12,14,16,18,20},{3,6,9,12,15,18,21,24,27,30}};
