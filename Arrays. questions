@@ -26,3 +26,22 @@ ans:  integer contain 4byte so 5*4=20,  p=1000+20 = 1020.
 > integer and float takes 4 bytes in memory,
 > char takes 1 byte in memory,
 > double takes 8 byte in memory.
+
+
+Q program to print the table of 2 and 3 using 2d arrays.
+
+
+#include<stdio.h>
+int main() {
+    int table[2][10]={{2,4,6,8,10,12,14,16,18,20},{3,6,9,12,15,18,21,24,27,30}};
+    
+    printf("print the table of 2: ");
+    for(int i=0; i<10; i++){
+        printf("\t%d",table[0][i]);
+    }
+    printf("\n");
+    printf("print the table of 3: ");
+    for(int i=0; i<10; i++){
+        printf("\t%d",table[1][i]);
+    }
+}
