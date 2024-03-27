@@ -15,3 +15,7 @@ int main() {
     printf("largest value in the array is %d",largest);
     return 0;
 }
+
+
+
+// program to print smallest number in the array.
