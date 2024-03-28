@@ -47,3 +47,10 @@ int main() {
 
 --------------------------------------------------------------------------------------------------
 Q. write a program to store the marks of 3 subject of 2 students.
+
+#include<stdio.h>
+int main() {
+    int marks[2][3]={{20,23,24},{23,22,22}};
+    printf("%d",marks[1][2]);
+    return 0;
+}
