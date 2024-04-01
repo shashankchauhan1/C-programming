@@ -58,3 +58,38 @@ int main() {
 -------------------------------------------------------------------------------------------------------
 Q there is a integer pointer p = 1000, what is p+5?
 ans:  integer contain 4byte so 5*4=20,  p=1000+20 = 1020.
+
+-------------------------------------------------------------------------------------------------------
+Q Same question in 2D array.
+
+#include<stdio.h>
+int main() {
+    int arr[5][5],r,c,i,element,flag=0;
+    printf("enter rows of the array: ");
+    scanf("%d",&r);
+    printf("enter columns of the array: ");
+    scanf("%d",&c);
+    
+    for(int i=0; i<r; i++){
+        for(int j=0; j<c; j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("enter searching element ");
+    scanf("%d",&element);
+    for(int i=0; i<r; i++){
+        for(int j=0; j<c; j++){
+            if(arr[i][j]==element){
+                printf("present at %dth row index and %dth column index\n",i,j);
+                flag=1;
+            }
+            // break;
+        }
+    }
+        
+    if(flag==0){
+        printf("not avilable");
+    }
+    
+    return 0;
+}
