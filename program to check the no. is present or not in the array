@@ -1,0 +1,34 @@
+// program to check weather the number present in the 2D array or not.
+
+#include<stdio.h>
+int main() {
+    int arr[10][10],i,j,r,c,n,flag=0;
+    
+    printf("enter rows: ");
+    scanf("%d",&r);
+    
+    printf("enter columns: ");
+    scanf("%d",&c);
+    
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    
+    printf("enter number you want to check: ");
+    scanf("%d",&n);
+    
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            if(arr[i][j]==n){
+                printf("%d number is present at index of %dth row and %dth column.\n",n,i,j);
+                flag=1;
+            }
+        }
+    }
+    if(flag=0){
+        printf("number is not present.");
+    }
+    
+}
