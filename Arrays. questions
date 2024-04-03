@@ -60,7 +60,7 @@ Q there is a integer pointer p = 1000, what is p+5?
 ans:  integer contain 4byte so 5*4=20,  p=1000+20 = 1020.
 
 -------------------------------------------------------------------------------------------------------
-Q Same question in 2D array.
+Q Program to check weather the number is present in the array or not.(2D array).
 
 #include<stdio.h>
 int main() {
