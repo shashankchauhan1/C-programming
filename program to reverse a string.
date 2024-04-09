@@ -20,3 +20,26 @@ int reverse(char name[]){
     }
     printf("%s",name);
 }
+
+
+
+// program to reversing by looping.
+
+#include<stdio.h>
+#include<string.h>
+
+int string(char arr[]);
+
+int main() {
+    char fName[]={'s','h','a','s','h','a','n','k'};
+    string(fName);
+    return 0;
+}
+
+int string(char arr[]){
+    int len=strlen(arr);
+    for(int i=len; i>=0; i--){
+        printf("%c",arr[i]);
+    }
+    printf("\n");
+}
