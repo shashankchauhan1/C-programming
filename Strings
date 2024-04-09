@@ -1,3 +1,7 @@
+>>> STRINGS:  a character array terminated by null character "\o".
+
+
+
 
 // Q create a string firstname and lastname to store details of user & print all the characters using loop.
 
