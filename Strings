@@ -1,5 +1,5 @@
 >>> STRINGS:  a character array terminated by null character "\o".
-
+\o  <-- this is the null character.
 
 
 
