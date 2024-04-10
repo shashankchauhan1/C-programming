@@ -1,1 +1,32 @@
+// write a program to print how many times a character comes in the string.
 
+
+#include<stdio.h>
+
+void arr(char name[100],char ch);
+
+int main() {
+    char name[100];
+    char ch;
+    printf("enter your name: ");
+    fgets(name,100,stdin);
+    printf("enter character to check: ");
+    scanf("%c",&ch);
+    arr(name,ch);
+    return 0;
+}
+
+void arr(char name[100],char ch){
+    int count=0;
+    for(int i=0; name[i]!='\0'; i++){
+        if(name[i]==ch){
+            count++;
+        }
+    }
+    if(ch==' '){
+        printf("space comes %d times in thsi string",count);
+    }
+    else{
+        printf("%c comes %d times in this string",ch,count);
+    }
+}
