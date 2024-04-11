@@ -23,3 +23,75 @@ int string(char arr[]){
     }
     printf("\n");
 }
+
+
+STANDARD LIBRARY FUNCTION
+
+1> strlen(); 		<-- count the length of the string.(stringlength)
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char name[100];
+    char ch;
+    printf("enter your name: ");
+    fgets(name,100,stdin);
+    int length=strlen(name);
+    printf("%d",length);
+    return 0;
+}
+
+
+
+
+2> strcpy(newstr, oldstr);		< copy the value of oldstr to newstr.
+
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+    char fname[]="shashank";
+    char lname[]="chauhan";
+    strcpy(fname,lname);
+    printf("%s",fname);
+    return 0;
+}			it changes the value of fname to lname ---> printf("%s",fname); --> chauhan
+
+
+
+
+
+3> strcat(1st str, 2nd str);		< concat 2 strings.
+
+in this we have to give the size to the string  1, because if str1 has the capacity to store str2 so it can store otherwise not. it concat the str2 with str1.
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char fname[100]="shashank ";
+    char lname[100]="chauhan";
+    strcat(fname,lname);
+    printf("%s",fname);
+    return 0;
+}
+
+4> strcmp(1st str, 2nd str);		< compare 2 strings.
+
+>> if both the strings are equal then it returns 0.
+>> if str1>str2 then it return positive value.	(depends upon ASCII value).
+>> if str2>str1 then it return negative value. (depends upon ASCII value).
+
+suppose	str1 = "apple"
+and 	str2 = "banana"
+printf("%d",strcmp(str1,str2));
+
+then it check ascii value of b is 66 which is greater then ascii value of a which is 65 so it return 65-66 and return negative value.(-1).
+
+#include<stdio.h>
+#include<string.h>
+int main() {
+    char fname[100]="apple";
+    char lname[100]="banana";
+    printf("%d",strcmp(fname,lname));    
+    return 0;
+}
