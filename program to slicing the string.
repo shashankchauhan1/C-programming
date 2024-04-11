@@ -1,0 +1,31 @@
+// 1> sliced string comes in new variable.
+
+#include<stdio.h>
+#include<string.h>
+
+void slice(char str[100],int si,int ei);
+
+int main() {
+    char str[100];
+    int si,ei;
+    printf("enter input: ");
+    fgets(str,100,stdin);
+    printf("enter starting index: ");
+    scanf("%d",&si);
+    printf("enter ending index: ");
+    scanf("%d",&ei);
+    slice(str,si,ei);
+    return 0;
+}
+
+void slice(char str[100],int si,int ei){
+    char newstr[100];
+    if(si<=ei){
+        int j=0;
+        for(int i=si; i<=ei; i++,j++){
+            newstr[j]=str[i];
+        }
+        newstr[j]='\0';
+        puts(newstr);
+    }
+}
