@@ -1,6 +1,5 @@
 // program to check weather the input is a perfect number or not.
 
-
 #include<stdio.h>
 int main() {
     int n;
