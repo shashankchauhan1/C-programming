@@ -1,6 +1,6 @@
 >>> STRINGS:  a character array terminated by null character "\o".
 \o  <-- this is the null character.
-
+0 <-- this is zero
 
 
 // Q create a string firstname and lastname to store details of user & print all the characters using loop.
@@ -74,6 +74,8 @@ int main() {
     printf("%s",fname);
     return 0;
 }
+
+
 
 4> strcmp(1st str, 2nd str);		< compare 2 strings.
 
