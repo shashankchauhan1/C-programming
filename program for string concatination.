@@ -1,1 +1,22 @@
 // program to concat strings using loops.
+
+#include<stdio.h>
+int main() {
+    char fName[100]="shashank";
+    char lName[100]="chauhan";
+    char fullName[200];
+    int i=0;
+    for(int j=0; fName[j]!=0; j++){
+        fullName[i]=fName[j];
+        i++;
+    }
+    
+    for(int k=0; lName[k]!=0; k++){
+        fullName[i]=lName[k];
+        i++;
+    }
+    
+    fullName[i]='\0';
+    puts(fullName);
+    return 0;
+}
