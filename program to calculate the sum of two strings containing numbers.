@@ -1,1 +1,36 @@
+// program to calculate the sum of two strings containing integers.
+// stdlib <--- atoi  <----- ascii to integer function to convert string to integer.
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<ctype.h>
+
+int main() {
+    int count1,count2,check=0;
+    char str1[100];
+    char str2[100];
+    
+    int n1=strlen(str1);
+    int n2=strlen(str2);
+    
+    fgets(str1,100,stdin);
+    fgets(str2,100,stdin);
+    
+    for(int i=0; str1[i]!='\0' && str2!='\0'; i++){
+        if(isdigit(str1[i]) && isdigit(str2[i])){
+            check=1;
+        }
+    }
+    if(check==1){
+        count1=atoi(str1);
+        count2=atoi(str2);
+        printf("%d",count1+count2);
+    }
+    else{
+        printf("invalid input.");
+    }
+    return 0;
+
+}
 
