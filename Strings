@@ -97,3 +97,11 @@ int main() {
     printf("%d",strcmp(fname,lname));    
     return 0;
 }
+
+
+Q. take a input string and a number which do the following cases:
+if the number = 1 --->  reverse the string.
+if the number = 2 --->  uppercase the string.
+if the number = 3 --->  capitalize the string (first alphabet is capital).
+
+Hint : you can use ctype.h, string.h library and also create functions.
