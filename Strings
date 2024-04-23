@@ -100,7 +100,7 @@ int main() {
 
 CHARACTER TYPE functions.
 
-1> toupper()
+1> toupper();
 
 #include<stdio.h>
 #include<ctype.h>
@@ -108,6 +108,19 @@ int main(){
     char str[100]="shashank";
     for(int i=0; str[i]!='\0'; i++){
         str[i]=toupper(str[i]);
+    }
+    puts(str);
+    return 0;
+}
+
+2> tolower();
+
+#include<stdio.h>
+#include<ctype.h>
+int main(){
+    char str[100]="SHASHANK";
+    for(int i=0; str[i]!='\0'; i++){
+        str[i]=tolower(str[i]);
     }
     puts(str);
     return 0;
