@@ -98,6 +98,21 @@ int main() {
     return 0;
 }
 
+CHARACTER TYPE functions.
+
+1> toupper()
+
+#include<stdio.h>
+#include<ctype.h>
+int main(){
+    char str[100]="shashank";
+    for(int i=0; str[i]!='\0'; i++){
+        str[i]=toupper(str[i]);
+    }
+    puts(str);
+    return 0;
+}
+
 
 Q. take a input string and a number which do the following cases:
 if the number = 1 --->  reverse the string.
