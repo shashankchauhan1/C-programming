@@ -1,1 +1,9 @@
+structures are user defined datatypes which stores heterogeneous data.
 
+SYNTAX:
+
+struct student{
+    int marks;
+    float cgpa;
+    char name[100];
+};
