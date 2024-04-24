@@ -7,3 +7,43 @@ struct student{
     float cgpa;
     char name[100];
 };
+
+
+Q write a program to store the information of 3 employees working in a ABC company.
+
+#include<stdio.h>
+#include<string.h>
+
+struct abc{
+    char eName[100];
+    char designation[100];
+    int salary;
+};
+
+int main(){
+    // details of employee 1
+    printf("\ndetails of employee 1: \n");
+    struct abc e1={"john","CEO",350000};
+    
+    printf("name: %s\n",e1.eName);
+    printf("designation: %s\n",e1.designation);
+    printf("salary: %d\n",e1.salary);
+    
+    // details of employee 2
+    printf("\ndetails of employee 2: \n");
+    struct abc e2={"mark","CFO",250000};
+    
+    printf("name: %s\n",e2.eName);
+    printf("designation: %s\n",e2.designation);
+    printf("salary: %d\n",e2.salary);
+    
+    // details of employee 3
+    printf("\ndetails of employee 3: \n");
+    struct abc e3={"jack","COO",150000};
+    
+    printf("name: %s\n",e3.eName);
+    printf("designation: %s\n",e3.designation);
+    printf("salary: %d\n",e3.salary);
+    
+    return 0;
+}
