@@ -1,1 +1,34 @@
 // product management system
+
+
+// book mgmt system
+#include<stdio.h>
+#include<string.h>
+
+struct productmgmt{
+    char pName[100];
+    int quantity;
+    double price;
+};
+
+int main(){
+    int n;
+    double avg;
+    printf("Enter number of products: ");
+    scanf("%d",&n);
+    struct productmgmt s1[50];
+    for(int i=0; i<n; i++){
+        printf("\nenter detail of product %d: \n",i+1);
+        printf("product name: ");
+        scanf("%s",s1[i].pName);
+        printf("Quantity: ");
+        scanf("%d",&s1[i].quantity);
+        printf("price: ");
+        scanf("%lf",&s1[i].price);
+    }
+    for(int i=0; i<n; i++){
+        avg+=s1[i].quantity+s1[i].price;
+    }
+    printf("average worth of all products is: %lf",avg/n);
+    return 0;
+}
