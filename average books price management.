@@ -1,1 +1,35 @@
 // average books price management. 
+
+#include<stdio.h>
+#include<string.h>
+
+struct bookmgmt{
+    char bName[100];
+    char author[100];
+    int pYear;
+    double price;
+};
+
+int main(){
+    int n;
+    double avg;
+    printf("Enter number of books: ");
+    scanf("%d",&n);
+    struct bookmgmt s1[50];
+    for(int i=0; i<n; i++){
+        printf("\nenter detail of book %d: \n",i+1);
+        printf("book name: ");
+        scanf("%s",s1[i].bName);
+        printf("author name: ");
+        scanf("%s",s1[i].author);
+        printf("publishing year: ");
+        scanf("%d",&s1[i].pYear);
+        printf("price: ");
+        scanf("%lf",&s1[i].price);
+    }
+    for(int i=0; i<n; i++){
+        avg+=s1[i].price;
+    }
+    printf("average price of books is: %lf",avg/n);
+    return 0;
+}
