@@ -1,2 +1,18 @@
 // program to print complex number using arrow operator.
 >>> complex number store real number and imaginary number.
+
+
+#include<stdio.h>
+
+typedef struct complex{
+    int real_no;
+    int img_no;
+}com;
+
+int main() {
+    com c1={3,5};
+    com *ptr=&c1;
+    printf("Real Number is: %d\n",ptr->real_no);
+    printf("Imaginary Number is: %d\n",ptr->img_no);
+    return 0;
+}
