@@ -1,5 +1,4 @@
-// percentage calculator.
-
+// percentage calculator without function.
 
 #include<stdio.h>
 
@@ -16,7 +15,7 @@ int main() {
     getchar();
     cal p1[50];
     for(int i=0; i<n; i++){
-        printf("enter details of subject 1: %d\n",i+1);
+        printf("enter details of subject %d:\n",i+1);
 
         printf("\nsubject name: ");
         scanf("%49[^\n]",p1[i].sName);
@@ -31,4 +30,45 @@ int main() {
     }
     printf("percentage is: %.2f",sum/n);
     return 0;
+}
+
+
+// percentage calculator with function.
+
+#include<stdio.h>
+
+typedef struct calculator{
+    char sName[50];
+    float percentage;
+}cal;
+
+void percentage(int n);
+
+int main() {
+    int n;
+    printf("Enter Number Of Subject: ");
+    scanf("%d",&n);
+    getchar();
+    percentage(n);
+    return 0;
+}
+
+void percentage(int n){
+    float sum;
+    cal p1[50];
+    for(int i=0; i<n; i++){
+        printf("enter details of subject %d:\n",i+1);
+
+        printf("\nsubject name: ");
+        scanf("%49[^\n]",p1[i].sName);
+        getchar();
+        
+        printf("enter marks scored: ");
+        scanf("%f",&p1[i].percentage);
+        getchar();
+    }
+    for(int i=0; i<n; i++){
+        sum+=p1[i].percentage;
+    }
+    printf("percentage is: %.2f",sum/n);
 }
