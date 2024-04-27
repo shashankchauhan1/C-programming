@@ -1,1 +1,41 @@
+//Q gpa/cgpa calculator
+
+#include<stdio.h>
+
+typedef struct calculator{
+    char sName[50];
+    float percentage;
+}cal;
+
+void percentage(int n);
+
+int main() {
+    int n;
+    printf("Enter Number Of Subject: ");
+    scanf("%d",&n);
+    getchar();
+    percentage(n);
+    return 0;
+}
+
+void percentage(int n){
+    float sum;
+    float percent;
+    cal p1[50];
+    for(int i=0; i<n; i++){
+        printf("enter details of subject %d:\n",i+1);
+
+        printf("\nsubject name: ");
+        scanf("%49[^\n]",p1[i].sName);
+        getchar();
+        
+        printf("enter marks scored: ");
+        scanf("%f",&p1[i].percentage);
+        getchar();
+    }
+    for(int i=0; i<n; i++){
+        sum+=p1[i].percentage;
+    }
+    printf("gpa is: %.2f",(sum/n)/10);
+}
 
