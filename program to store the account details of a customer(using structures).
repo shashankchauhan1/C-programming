@@ -1,1 +1,19 @@
+Q write a program to store the account details of a customer in ABC bank, also make a alias.
+
+#include<stdio.h>
+#include<string.h>
+
+typedef struct abc{
+    char name[50];
+    int acc_no;
+    int mob_no;
+}acc;
+
+int main(){
+    acc a1={"shashank",1047,69940};
+    printf("name: %s\n",a1.name);
+    printf("account no.: %d\n",a1.acc_no);
+    printf("mobile no.: %d\n",a1.mob_no);
+    return 0;
+}
 
