@@ -1,1 +1,24 @@
 // program to calculate attendance
+
+
+#include<stdio.h>
+
+typedef struct attendance{
+    char name[100];
+    int aClass;
+    int tClass;
+}attend;
+
+int main(){
+    attend a1;
+
+    printf("Enter student name: ");
+    scanf("%49[^\n]",a1.name);
+    printf("enter total no. of classes: ");
+    scanf("%d",&a1.tClass);
+    printf("enter no. of classes attended: ");
+    scanf("%d",&a1.aClass);
+
+    printf("your attendance is: %.2f",((float)a1.aClass/a1.tClass)*100);
+    return 0;
+}
