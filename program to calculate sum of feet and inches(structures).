@@ -1,1 +1,31 @@
 //  program to calculate sum of feet and inches if inch>12  then feet +1 .
+
+
+#include<stdio.h>
+
+typedef struct addition{
+    int feet;
+    int inch;
+    int sum;
+}add;
+
+void summ(add a1,add a2, add sum);
+
+int main(){
+    add sum={0};
+    add a1={7,12};
+    add a2={6,12};
+    summ(a1,a2,sum);
+    return 0;
+}
+
+void summ(add a1,add a2, add sum){
+    sum.feet=a1.feet+a2.feet;
+    sum.inch=a1.inch+a2.inch;
+    if (sum.inch >= 12) {
+        sum.feet += sum.inch / 12;
+        sum.inch = sum.inch % 12;
+    }
+    printf("sum of feet is: %d\n",sum.feet);
+    printf("sum of inch is: %d",sum.inch);
+}
