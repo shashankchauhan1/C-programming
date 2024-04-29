@@ -1,4 +1,4 @@
-structures are user defined datatypes which stores heterogeneous data.
+>>> structures are user defined datatypes which stores heterogeneous data.
 
 SYNTAX:
 
@@ -7,6 +7,30 @@ struct student{
     float cgpa;
     char name[100];
 };
+
+
+>>> TYPEDEF  keyword	(typedef)
+
+it is used to create alias of the datatype ,nickname or another name.
+
+#include<stdio.h>
+#include<string.h>
+
+typedef struct computerscienceengineering{
+    char name[100];
+    int rollno;
+} cse;				// computerscienceengineering --> cse
+
+int main(){
+    cse s1;
+    
+    s1.rollno=1047;
+    strcpy(s1.name,"shashank chauhan");
+    
+    printf("name: %s\n",s1.name);
+    printf("rollno: %d\n",s1.rollno);
+    return 0;
+}
 
 
 Q write a program to store the information of 3 employees working in a ABC company.
