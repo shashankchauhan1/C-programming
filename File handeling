@@ -1,3 +1,14 @@
 Q What is file?
 >> It is a container in a storage device to store data.
 
+OPERATION on files:
+>> create
+>> open
+>> close
+>> read
+>> write
+
+Types of files:
+>> text(textual data) abcd.....	so on.  { example: .txt, .c }
+>> binary(binary data) 0100101.... so on.		{ example: .exe, .mp3, .jpg }
+ 
