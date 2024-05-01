@@ -12,3 +12,6 @@ Types of files:
 >> text(textual data) abcd.....	so on.  { example: .txt, .c }
 >> binary(binary data) 0100101.... so on.		{ example: .exe, .mp3, .jpg }
  
+>> RAM is volatile.
+>> contents are lost when the program terminates.
+>> files are used to presist(maintain, store)the data.
