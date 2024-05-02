@@ -6,6 +6,8 @@ there's a volatile and non-volatile memory.
 Volatile: the data in the ram
 non-Volatile: the data in secondary storage
 
+volatile means the data will vanish off when the device is switched off but non-volatile doesn't vanish the data after switching off.
+so, in volatile the program runs which is stores in a non-volatile memory.
 
 OPERATION on files:
 >> create
