@@ -1,6 +1,12 @@
 Q What is file?
 >> It is a container in a storage device to store data.
 
+there's a volatile and non-volatile memory.
+
+Volatile: the data in the ram
+non-Volatile: the data in secondary storage
+
+
 OPERATION on files:
 >> create
 >> open
