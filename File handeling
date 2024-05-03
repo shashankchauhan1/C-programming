@@ -23,3 +23,21 @@ Types of files:
 >> RAM is volatile.
 >> contents are lost when the program terminates.
 >> files are used to presist(maintain, store)the data.
+
+
+FILE is a hidden structure. the file pointer points towards this file and used to access the files.
+
+FILE *fptr			<-- this is a file pointer
+
+SYNTAX to OPEN A FILE		<-- file name example: test.txt, file.c etc.
+fptr = fopen("filename",mode);		<-- mode example: Read, Write etc.
+
+SYNTAX to close a file
+fclose(fptr);
+
+Modes to open files:
+1> "r" : read file.
+2> "rb" : read file in binary.
+3> "w" : write file.
+4> "wb" : write file in binary.
+5> "a" : append.
