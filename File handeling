@@ -41,3 +41,9 @@ Modes to open files:
 3> "w" : write file.
 4> "wb" : write file in binary.
 5> "a" : append.
+
+>>>  in read and readbinary if the file doesn't exist then it stores a null pointer within, so our pointer become null pointer.
+
+>>>  in write and writebinary if the file doesn't exist then it creates the file but if the file already exist so it delete the old stored data then write(overwriting).
+
+>>>  if we doesn't want our data will be deleted and write within the stored content then we use append.
