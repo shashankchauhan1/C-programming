@@ -47,3 +47,28 @@ Modes to open files:
 >>>  in write and writebinary if the file doesn't exist then it creates the file but if the file already exist so it delete the old stored data then write(overwriting).
 
 >>>  if we doesn't want our data will be deleted and write within the stored content then we use append.
+
+
+NOW how to read data from the file.
+
+fscanf(filepointer,format specifier,address);
+
+char ch;
+fscanf(fptr,"%c",%ch);
+
+
+#include<stdio.h>
+int main(){
+    FILE *fptr;
+    char ch;
+    fptr=fopen("test.txt","r");
+    if(fptr==NULL){
+        printf("file doesn't exist.");
+    }
+    else{
+        fscanf(fptr,"%c",&ch);
+        printf("character = %c\n",ch);
+    }
+    fclose(fptr);	
+    return 0;
+}
