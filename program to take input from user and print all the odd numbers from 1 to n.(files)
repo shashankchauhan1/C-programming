@@ -1,0 +1,15 @@
+// program to take input from user and print all the odd numbers from 1 to n. n is ithe input taken by the user.
+
+#include<stdio.h>
+int main(){
+	FILE *fptr;
+	int n,i;
+	fptr=fopen("test.txt","w");
+	printf("enter a number: ");
+	scanf("%d",&n);
+	for(i=1; i<n; i+=2){
+		fprintf(fptr,"%d",i);
+	}
+	fclose(fptr);
+	return 0;
+}
