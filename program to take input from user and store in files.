@@ -1,1 +1,28 @@
+Q program to take input from user and store in the files.
+
+
+#include<stdio.h>
+int main(){
+	FILE *fptr;
+	fptr=fopen("test.txt","w");
+	
+	char name[100];
+	float marks;
+	int rollno;
+	
+	printf("enter your name: ");
+	scanf("%s",&name);
+	
+	printf("enter your rollno: ");
+	scanf("%d",&rollno);
+	
+	printf("enter your marks: ");
+	scanf("%f",&marks);
+	
+	fprintf(fptr,"Student Name: %s\n",name);
+	fprintf(fptr,"Student Rollno: %d\n",rollno);
+	fprintf(fptr,"Student CGPA: %f\n",marks);
+	
+	return 0;
+}
 
