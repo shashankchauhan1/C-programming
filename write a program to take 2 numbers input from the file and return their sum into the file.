@@ -1,1 +1,17 @@
+>> create a text file and write 2 numbers inside that file.
 
+#include<stdio.h>
+int main(){
+	FILE *fptr;
+	int a,b;
+	fptr=fopen("test.txt","r");
+	fscanf(fptr,"%d",&a);
+	fscanf(fptr,"%d",&b);
+	fclose(fptr);
+	
+	fptr=fopen("test.txt","w");
+	int c=a+b;
+	fprintf(fptr,"%d",c);
+	fclose(fptr);
+	return 0;
+}
