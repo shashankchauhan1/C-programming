@@ -1,1 +1,35 @@
+// program to print armstrong numbers within a range entered by user.
 
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int s;
+    int e;
+    printf("enter starting number: ");
+    scanf("%d",&s);
+    printf("enter ending number: ");
+    scanf("%d",&e);
+    for(int i=s; i<=e; i++){
+        int n1=i;
+        int n2=i;
+        int org=i;
+        int pwr=0;
+        int sum=0;
+        
+        while(n1!=0){
+            n1=n1/10;
+            pwr++;
+        }
+        
+        while(n2!=0){
+            int rem=n2%10;
+            sum=sum+pow(rem,pwr);
+            n2=n2/10;
+        }
+        if(sum==org){
+            printf("%d\n",sum);
+        }
+    }
+    return 0;
+}
