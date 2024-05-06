@@ -1,1 +1,32 @@
+// write a program to take numbers as input from user and print how many zeroes, positive, and negative numbers are there.
+
+
+#include<stdio.h>
+int main(){
+    int n,zero,positive,negative;
+    printf("enter amount of numbers: ");
+    scanf("%d",&n);
+    int arr[n];
+    
+    for(int i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+    }
+    
+    for(int i=0; i<n; i++){
+        if(arr[i]==0){
+            zero++;
+        }
+        if(arr[i]>0){
+            positive++;
+        }
+        if(arr[i]<0){
+            negative++;
+        }
+    }
+    printf("Zero = %d",zero);
+    printf("Positive = %d",positive);
+    printf("Negative = %d",negative);
+    
+    return 0;
+}
 
