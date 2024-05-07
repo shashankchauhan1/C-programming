@@ -1,4 +1,4 @@
-// EVEN
+// FOR EVEN
 
 #include<stdio.h>
 
@@ -23,7 +23,7 @@ void check(int n){
 
 
 
-// ODD
+// FOR ODD
 
 #include<stdio.h>
 
