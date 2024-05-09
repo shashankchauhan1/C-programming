@@ -21,3 +21,39 @@ int fibo(int n){
     }
     return 0;
 }
+
+
+// program to check weather the given input number is fibonaaci or not.
+
+#include<stdio.h>
+
+int fibo(int n);
+
+int main(){
+    int n;
+    printf("enter number: ");
+    scanf("%d",&n);
+    int fib=fibo(n);
+    if(fib){
+        printf("it is a fibonacci number.");
+    }
+    else{
+        printf("it is not a fibonacci number.");
+    }
+    return 0;
+}
+
+int fibo(int n){
+    int x=0, y=1, z=0;
+    while(z<=n){
+        if(z==n){
+            return 1;
+        }
+        else{
+            x=y;
+            y=z;
+            z=x+y;
+        }
+    }
+    return 0;
+}
