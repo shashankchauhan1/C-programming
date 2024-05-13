@@ -1,4 +1,4 @@
->>> STRINGS:  a character array terminated by null character "\o".
+>>>> STRINGS:  a character array terminated by null character "\o".
 \o  <-- this is the null character.
 0 <-- this is zero.
 
