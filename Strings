@@ -1,6 +1,6 @@
 >>> STRINGS:  a character array terminated by null character "\o".
 \o  <-- this is the null character.
-0 <-- this is zero
+0 <-- this is zero.
 
 
 // Q create a string firstname and lastname to store details of user & print all the characters using loop.
@@ -40,7 +40,6 @@ int main() {
     printf("%d",length);
     return 0;
 }
-
 
 
 
