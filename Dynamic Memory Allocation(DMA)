@@ -1,1 +1,8 @@
+Dynamic Memory Allocation (DMA)
 
+dynamic memory allocation means allocating memory on runtime, when the program is executing.
+types of DMA:
+1> malloc();
+2> calloc();
+3> free();
+4> realloc();
