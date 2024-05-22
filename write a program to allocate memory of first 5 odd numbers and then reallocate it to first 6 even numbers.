@@ -1,2 +1,19 @@
 Write a program to allocate memory of first 5 odd numbers and then reallocate it to first 6 even numbers.
 
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int *ptr;
+    ptr=(int*) calloc(5,sizeof(int));
+    printf("ODD\n");
+    for(int i=1; i<10; i+=2){
+        printf("%d\t",i);
+    }
+    printf("\nEVEN\n");
+    ptr=realloc(ptr,6);
+    for(int i=0; i<=12; i+=2){
+        printf("%d\t",i);
+    }
+    free(ptr);
+    return 0;
+}
