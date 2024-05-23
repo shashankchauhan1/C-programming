@@ -25,3 +25,7 @@ int main(){
     }			if the bytes are more then your device memory it return NULL.
     return 0;
 }
+
+
+
+>>> malloc doesn't take the guarantee to give zero all time but calloc give.
