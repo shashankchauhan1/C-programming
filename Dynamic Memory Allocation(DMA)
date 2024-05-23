@@ -6,3 +6,22 @@ types of DMA:
 2> calloc();    <-- continuous memory allocation
 3> free();      <-- free memory
 4> realloc();   <-- re-allocation
+
+
+
+#include<stdio.h>
+#include<stdlib.h>			// need to include standard library.
+int main(){
+    int *ptr;
+    ptr=(int*)malloc(5*sizeof(int));	// (int*)	<-- it return void so it return int now 5*sizeof(int) -> 20 bytes memory reserve.
+    ptr[0]=1;
+    ptr[1]=2;
+    ptr[2]=3;
+    ptr[3]=4;
+    ptr[4]=5;
+    
+    for(int i=0; i<5; i++){
+        printf("%d",ptr[i])
+    }			if the bytes are more then your device memory it return NULL.
+    return 0;
+}
