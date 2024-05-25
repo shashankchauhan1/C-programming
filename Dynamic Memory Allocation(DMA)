@@ -32,3 +32,7 @@ int main(){
 >>> In static memory we allocate memory before the execution of the program but in dynamic we can change the size of the memory at runtime.
 >>> compile time: program before execution
 >>> runtime : execution of the program to end of the program.
+
+
+
+Q WAP to allocate the memory of size n, where n is given by the user.
