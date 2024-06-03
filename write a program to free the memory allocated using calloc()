@@ -15,7 +15,8 @@ int main(){
         printf("%d",ptr[i]);
     }
     
-    free(ptr);      // now the allocated memory is free
+    free(ptr);      // now the allocated memory is free and it becomes a dangeling pointer.
+    ptr=NULL;        // we use null to avoid dangeling pointer.
     
     return 0;
 }  
